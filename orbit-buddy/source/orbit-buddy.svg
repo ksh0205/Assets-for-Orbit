@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none">
+  <title>Orbit Buddy — Social Character</title>
+  <desc>A cosmic, warm social mascot for Orbit. Layer IDs are intentionally named for animation rigging.</desc>
+  <defs>
+    <linearGradient id="bodyGradient" x1="300" y1="210" x2="760" y2="790" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A8A2FF"/>
+      <stop offset="0.46" stop-color="#7C73FF"/>
+      <stop offset="1" stop-color="#6559EA"/>
+    </linearGradient>
+    <linearGradient id="ringGradient" x1="190" y1="470" x2="850" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4ECDC4"/>
+      <stop offset="0.48" stop-color="#B9B3FF"/>
+      <stop offset="1" stop-color="#FF7AA8"/>
+    </linearGradient>
+    <radialGradient id="glowGradient" cx="0" cy="0" r="1" gradientTransform="translate(430 355) rotate(39) scale(270 220)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="180" y="150" width="680" height="760" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="30" stdDeviation="28" flood-color="#111225" flood-opacity="0.28"/>
+    </filter>
+    <filter id="starGlow" x="310" y="112" width="404" height="330" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <g id="sparkles" opacity="0.92">
+    <path d="M211 333l10 24 24 10-24 10-10 24-10-24-24-10 24-10 10-24Z" fill="#4ECDC4"/>
+    <path d="M815 315l7 18 18 7-18 7-7 18-7-18-18-7 18-7 7-18Z" fill="#FFE66D"/>
+    <circle cx="796" cy="705" r="11" fill="#FF7AA8"/>
+    <circle cx="252" cy="726" r="8" fill="#B9B3FF"/>
+  </g>
+
+  <g id="orbit_back" transform="rotate(-12 512 596)">
+    <ellipse cx="512" cy="596" rx="366" ry="126" stroke="#A39CFF" stroke-opacity="0.42" stroke-width="34"/>
+  </g>
+
+  <g id="shadow">
+    <ellipse cx="512" cy="830" rx="210" ry="42" fill="#111225" fill-opacity="0.16"/>
+  </g>
+
+  <g id="body" filter="url(#softShadow)">
+    <rect x="298" y="288" width="428" height="490" rx="180" fill="url(#bodyGradient)" stroke="#E4E1FF" stroke-width="10"/>
+    <ellipse cx="435" cy="402" rx="166" ry="140" fill="url(#glowGradient)"/>
+  </g>
+
+  <g id="arms">
+    <g id="arm_left" transform="rotate(8 325 520)">
+      <rect x="275" y="483" width="88" height="220" rx="44" fill="#7C73FF" stroke="#E4E1FF" stroke-width="8"/>
+    </g>
+    <g id="arm_right" transform="rotate(-10 699 516)">
+      <rect x="661" y="478" width="88" height="220" rx="44" fill="#7C73FF" stroke="#E4E1FF" stroke-width="8"/>
+    </g>
+  </g>
+
+  <g id="face">
+    <ellipse id="eye_left" cx="441" cy="466" rx="34" ry="45" fill="#111225"/>
+    <ellipse id="eye_right" cx="583" cy="466" rx="34" ry="45" fill="#111225"/>
+    <circle cx="429" cy="450" r="9" fill="white"/>
+    <circle cx="571" cy="450" r="9" fill="white"/>
+    <ellipse cx="402" cy="548" rx="30" ry="14" fill="#B9B3FF" opacity="0.72"/>
+    <ellipse cx="622" cy="548" rx="30" ry="14" fill="#B9B3FF" opacity="0.72"/>
+    <path id="smile" d="M470 533c14 17 28 25 42 25s28-8 42-25" stroke="#111225" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <g id="heart_core">
+    <path d="M512 648c-33-28-68-55-68-94 0-30 22-50 50-50 18 0 33 9 44 24 11-15 26-24 44-24 28 0 50 20 50 50 0 39-35 66-68 94l-26 22-26-22Z" fill="#FF7AA8" stroke="#FFD3E2" stroke-width="8"/>
+    <path d="M483 539c8-11 19-16 31-16" stroke="white" stroke-opacity="0.55" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g id="orbit_front" transform="rotate(-12 512 596)">
+    <path d="M184 650c87 70 201 107 328 107 157 0 293-56 371-145" stroke="url(#ringGradient)" stroke-width="34" stroke-linecap="round"/>
+    <circle id="satellite_moon" cx="856" cy="548" r="42" fill="#FFE66D" stroke="#FFF4AE" stroke-width="8"/>
+    <circle cx="842" cy="535" r="10" fill="#EBCB5F" opacity="0.7"/>
+    <circle cx="872" cy="559" r="7" fill="#EBCB5F" opacity="0.58"/>
+  </g>
+
+  <g id="north_star">
+    <path d="M512 144l18 44 45 18-45 18-18 44-18-44-45-18 45-18 18-44Z" fill="#FFE66D" opacity="0.35" filter="url(#starGlow)"/>
+    <path d="M512 156l16 38 38 16-38 16-16 38-16-38-38-16 38-16 16-38Z" fill="#FFE66D" stroke="#FFF4AE" stroke-width="6"/>
+  </g>
+</svg>

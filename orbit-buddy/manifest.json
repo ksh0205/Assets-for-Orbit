@@ -1,0 +1,66 @@
+{
+  "characterId": "orbit-buddy",
+  "displayName": "Orbit Buddy",
+  "version": "1.0.0",
+  "canvas": {
+    "width": 512,
+    "height": 512,
+    "fps": 30,
+    "background": "transparent"
+  },
+  "palette": {
+    "orbitPrimary": "#7C73FF",
+    "lavender": "#B9B3FF",
+    "socialPink": "#FF7AA8",
+    "aqua": "#4ECDC4",
+    "starYellow": "#FFE66D",
+    "spaceInk": "#111225"
+  },
+  "source": {
+    "type": "svg",
+    "path": "source/orbit-buddy.svg",
+    "riggableLayerIds": [
+      "body",
+      "arms",
+      "arm_left",
+      "arm_right",
+      "face",
+      "eye_left",
+      "eye_right",
+      "smile",
+      "heart_core",
+      "orbit_back",
+      "orbit_front",
+      "satellite_moon",
+      "north_star",
+      "sparkles"
+    ]
+  },
+  "animation": {
+    "type": "lottie",
+    "path": "animations/orbit-buddy.json",
+    "markers": {
+      "idle": {
+        "startFrame": 0,
+        "endFrame": 59,
+        "loop": true
+      },
+      "hello": {
+        "startFrame": 60,
+        "endFrame": 119,
+        "loop": false
+      },
+      "love": {
+        "startFrame": 120,
+        "endFrame": 179,
+        "loop": false
+      }
+    }
+  },
+  "mobile": {
+    "recommendedRuntime": "lottie-react-native",
+    "minimumDisplaySize": 48,
+    "recommendedDisplaySize": 180,
+    "preferredFormat": "json"
+  }
+}
